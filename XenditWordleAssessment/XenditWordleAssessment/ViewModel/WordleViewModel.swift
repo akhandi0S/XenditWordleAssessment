@@ -16,6 +16,10 @@ class WordleViewModel:NSObject{
         count: 6
     )
     
+    var currentGuesses: [[Character?]] {
+        return guesses
+    }
+    
     func getTodayWordle(){
         todayWordle = worldeList.randomElement() ?? "India"
         print("Today Wordle:", todayWordle)

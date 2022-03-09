@@ -25,6 +25,13 @@ class WordleLetterCell: UICollectionViewCell {
         letter.text = nil
     }
     
+    
+    func configCell(letter:Character){
+        self.letter.text = String(letter).uppercased()
+        viewWidth.constant = self.frame.width
+        viewHeight.constant = self.frame.height
+    }
+    
     func updateUI(){
         viewWidth.constant = self.frame.width
         viewHeight.constant = self.frame.height

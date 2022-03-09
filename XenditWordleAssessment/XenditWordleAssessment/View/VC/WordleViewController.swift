@@ -20,13 +20,13 @@ class WordleViewController: UIViewController {
         setupObserver()
     }
     
-    //Register cell xib to collectionView & enbleing keyboard
+    // Register cell xib to collectionView & enbleing keyboard
     func setupUI(){
         collectionView.register(UINib(nibName: "WordleLetterCell", bundle: nil), forCellWithReuseIdentifier: "WordleLetterCell")
         letterInputField.becomeFirstResponder()
     }
     
-    //to get the today Word for game from viewModel
+    // to get the today's Word for game from viewModel
     func setupObserver(){
         viewModel.getTodayWordle()
     }
@@ -39,12 +39,18 @@ extension WordleViewController:UICollectionViewDelegate, UICollectionViewDataSou
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WordleLetterCell", for: indexPath) as? WordleLetterCell else {
             return UICollectionViewCell()
         }
-        cell.updateUI()
+        let guesses = viewModel.currentGuesses
+        if let letter = guesses[indexPath.section][indexPath.row] {
+            cell.configCell(letter: letter)
+        }else{
+            cell.updateUI()
+        }
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return viewModel.currentGuesses[section].count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -53,8 +59,18 @@ extension WordleViewController:UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 6
+        return viewModel.currentGuesses.count
     }
-    
+}
+//MARK: - TextField Delegate- to type the letter for guesses the wordle
+extension WordleViewController:UITextFieldDelegate{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let letter = string.components(separatedBy: .whitespacesAndNewlines).joined()
+        if letter.count > 0{
+            print(letter)
+            textField.text = ""
+        }
+        return true
+    }
     
 }
