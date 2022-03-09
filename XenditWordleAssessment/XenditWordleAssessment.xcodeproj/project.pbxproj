@@ -16,6 +16,8 @@
 		18ED874227D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED874127D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift */; };
 		18ED874427D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED874327D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift */; };
 		18ED875627D8B01800A74A66 /* WordleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED875527D8B01800A74A66 /* WordleViewController.swift */; };
+		18ED875927D8B30F00A74A66 /* WordleLetterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED875727D8B30F00A74A66 /* WordleLetterCell.swift */; };
+		18ED875A27D8B30F00A74A66 /* WordleLetterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18ED875827D8B30F00A74A66 /* WordleLetterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		18ED874127D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XenditWordleAssessmentUITests.swift; sourceTree = "<group>"; };
 		18ED874327D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XenditWordleAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18ED875527D8B01800A74A66 /* WordleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleViewController.swift; sourceTree = "<group>"; };
+		18ED875727D8B30F00A74A66 /* WordleLetterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleLetterCell.swift; sourceTree = "<group>"; };
+		18ED875827D8B30F00A74A66 /* WordleLetterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordleLetterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 		18ED875227D8AEE100A74A66 /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				18ED875727D8B30F00A74A66 /* WordleLetterCell.swift */,
+				18ED875827D8B30F00A74A66 /* WordleLetterCell.xib */,
 			);
 			path = CollectionCell;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 			files = (
 				18ED872D27D8AAE500A74A66 /* LaunchScreen.storyboard in Resources */,
 				18ED872A27D8AAE500A74A66 /* Assets.xcassets in Resources */,
+				18ED875A27D8B30F00A74A66 /* WordleLetterCell.xib in Resources */,
 				18ED872827D8AAE200A74A66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +307,7 @@
 			files = (
 				18ED875627D8B01800A74A66 /* WordleViewController.swift in Sources */,
 				18ED872127D8AAE200A74A66 /* AppDelegate.swift in Sources */,
+				18ED875927D8B30F00A74A66 /* WordleLetterCell.swift in Sources */,
 				18ED872327D8AAE200A74A66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
