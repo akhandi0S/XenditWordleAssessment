@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18ED872127D8AAE200A74A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED872027D8AAE200A74A66 /* AppDelegate.swift */; };
+		18ED872327D8AAE200A74A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED872227D8AAE200A74A66 /* SceneDelegate.swift */; };
+		18ED872527D8AAE200A74A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED872427D8AAE200A74A66 /* ViewController.swift */; };
+		18ED872827D8AAE200A74A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ED872627D8AAE200A74A66 /* Main.storyboard */; };
+		18ED872A27D8AAE500A74A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18ED872927D8AAE500A74A66 /* Assets.xcassets */; };
+		18ED872D27D8AAE500A74A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ED872B27D8AAE500A74A66 /* LaunchScreen.storyboard */; };
+		18ED873827D8AAE500A74A66 /* XenditWordleAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED873727D8AAE500A74A66 /* XenditWordleAssessmentTests.swift */; };
+		18ED874227D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED874127D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift */; };
+		18ED874427D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED874327D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18ED873427D8AAE500A74A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18ED871527D8AAE200A74A66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18ED871C27D8AAE200A74A66;
+			remoteInfo = XenditWordleAssessment;
+		};
+		18ED873E27D8AAE500A74A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18ED871527D8AAE200A74A66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18ED871C27D8AAE200A74A66;
+			remoteInfo = XenditWordleAssessment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18ED871D27D8AAE200A74A66 /* XenditWordleAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XenditWordleAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ED872027D8AAE200A74A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18ED872227D8AAE200A74A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18ED872427D8AAE200A74A66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18ED872727D8AAE200A74A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18ED872927D8AAE500A74A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18ED872C27D8AAE500A74A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18ED872E27D8AAE500A74A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18ED873327D8AAE500A74A66 /* XenditWordleAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XenditWordleAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ED873727D8AAE500A74A66 /* XenditWordleAssessmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XenditWordleAssessmentTests.swift; sourceTree = "<group>"; };
+		18ED873D27D8AAE500A74A66 /* XenditWordleAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XenditWordleAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ED874127D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XenditWordleAssessmentUITests.swift; sourceTree = "<group>"; };
+		18ED874327D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XenditWordleAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18ED871A27D8AAE200A74A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ED873027D8AAE500A74A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ED873A27D8AAE500A74A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18ED871427D8AAE200A74A66 = {
+			isa = PBXGroup;
+			children = (
+				18ED871F27D8AAE200A74A66 /* XenditWordleAssessment */,
+				18ED873627D8AAE500A74A66 /* XenditWordleAssessmentTests */,
+				18ED874027D8AAE500A74A66 /* XenditWordleAssessmentUITests */,
+				18ED871E27D8AAE200A74A66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18ED871E27D8AAE200A74A66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18ED871D27D8AAE200A74A66 /* XenditWordleAssessment.app */,
+				18ED873327D8AAE500A74A66 /* XenditWordleAssessmentTests.xctest */,
+				18ED873D27D8AAE500A74A66 /* XenditWordleAssessmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18ED871F27D8AAE200A74A66 /* XenditWordleAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				18ED872027D8AAE200A74A66 /* AppDelegate.swift */,
+				18ED872227D8AAE200A74A66 /* SceneDelegate.swift */,
+				18ED872427D8AAE200A74A66 /* ViewController.swift */,
+				18ED872627D8AAE200A74A66 /* Main.storyboard */,
+				18ED872927D8AAE500A74A66 /* Assets.xcassets */,
+				18ED872B27D8AAE500A74A66 /* LaunchScreen.storyboard */,
+				18ED872E27D8AAE500A74A66 /* Info.plist */,
+			);
+			path = XenditWordleAssessment;
+			sourceTree = "<group>";
+		};
+		18ED873627D8AAE500A74A66 /* XenditWordleAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				18ED873727D8AAE500A74A66 /* XenditWordleAssessmentTests.swift */,
+			);
+			path = XenditWordleAssessmentTests;
+			sourceTree = "<group>";
+		};
+		18ED874027D8AAE500A74A66 /* XenditWordleAssessmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18ED874127D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift */,
+				18ED874327D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift */,
+			);
+			path = XenditWordleAssessmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18ED871C27D8AAE200A74A66 /* XenditWordleAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18ED874727D8AAE500A74A66 /* Build configuration list for PBXNativeTarget "XenditWordleAssessment" */;
+			buildPhases = (
+				18ED871927D8AAE200A74A66 /* Sources */,
+				18ED871A27D8AAE200A74A66 /* Frameworks */,
+				18ED871B27D8AAE200A74A66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XenditWordleAssessment;
+			productName = XenditWordleAssessment;
+			productReference = 18ED871D27D8AAE200A74A66 /* XenditWordleAssessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18ED873227D8AAE500A74A66 /* XenditWordleAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18ED874A27D8AAE500A74A66 /* Build configuration list for PBXNativeTarget "XenditWordleAssessmentTests" */;
+			buildPhases = (
+				18ED872F27D8AAE500A74A66 /* Sources */,
+				18ED873027D8AAE500A74A66 /* Frameworks */,
+				18ED873127D8AAE500A74A66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18ED873527D8AAE500A74A66 /* PBXTargetDependency */,
+			);
+			name = XenditWordleAssessmentTests;
+			productName = XenditWordleAssessmentTests;
+			productReference = 18ED873327D8AAE500A74A66 /* XenditWordleAssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18ED873C27D8AAE500A74A66 /* XenditWordleAssessmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18ED874D27D8AAE500A74A66 /* Build configuration list for PBXNativeTarget "XenditWordleAssessmentUITests" */;
+			buildPhases = (
+				18ED873927D8AAE500A74A66 /* Sources */,
+				18ED873A27D8AAE500A74A66 /* Frameworks */,
+				18ED873B27D8AAE500A74A66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18ED873F27D8AAE500A74A66 /* PBXTargetDependency */,
+			);
+			name = XenditWordleAssessmentUITests;
+			productName = XenditWordleAssessmentUITests;
+			productReference = 18ED873D27D8AAE500A74A66 /* XenditWordleAssessmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18ED871527D8AAE200A74A66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					18ED871C27D8AAE200A74A66 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					18ED873227D8AAE500A74A66 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 18ED871C27D8AAE200A74A66;
+					};
+					18ED873C27D8AAE500A74A66 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 18ED871C27D8AAE200A74A66;
+					};
+				};
+			};
+			buildConfigurationList = 18ED871827D8AAE200A74A66 /* Build configuration list for PBXProject "XenditWordleAssessment" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18ED871427D8AAE200A74A66;
+			productRefGroup = 18ED871E27D8AAE200A74A66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18ED871C27D8AAE200A74A66 /* XenditWordleAssessment */,
+				18ED873227D8AAE500A74A66 /* XenditWordleAssessmentTests */,
+				18ED873C27D8AAE500A74A66 /* XenditWordleAssessmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18ED871B27D8AAE200A74A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ED872D27D8AAE500A74A66 /* LaunchScreen.storyboard in Resources */,
+				18ED872A27D8AAE500A74A66 /* Assets.xcassets in Resources */,
+				18ED872827D8AAE200A74A66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ED873127D8AAE500A74A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ED873B27D8AAE500A74A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18ED871927D8AAE200A74A66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ED872527D8AAE200A74A66 /* ViewController.swift in Sources */,
+				18ED872127D8AAE200A74A66 /* AppDelegate.swift in Sources */,
+				18ED872327D8AAE200A74A66 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ED872F27D8AAE500A74A66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ED873827D8AAE500A74A66 /* XenditWordleAssessmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ED873927D8AAE500A74A66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ED874227D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift in Sources */,
+				18ED874427D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18ED873527D8AAE500A74A66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18ED871C27D8AAE200A74A66 /* XenditWordleAssessment */;
+			targetProxy = 18ED873427D8AAE500A74A66 /* PBXContainerItemProxy */;
+		};
+		18ED873F27D8AAE500A74A66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18ED871C27D8AAE200A74A66 /* XenditWordleAssessment */;
+			targetProxy = 18ED873E27D8AAE500A74A66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18ED872627D8AAE200A74A66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18ED872727D8AAE200A74A66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18ED872B27D8AAE500A74A66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18ED872C27D8AAE500A74A66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18ED874527D8AAE500A74A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18ED874627D8AAE500A74A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18ED874827D8AAE500A74A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XenditWordleAssessment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.XenditWordleAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18ED874927D8AAE500A74A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XenditWordleAssessment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.XenditWordleAssessment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18ED874B27D8AAE500A74A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.XenditWordleAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XenditWordleAssessment.app/XenditWordleAssessment";
+			};
+			name = Debug;
+		};
+		18ED874C27D8AAE500A74A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.XenditWordleAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XenditWordleAssessment.app/XenditWordleAssessment";
+			};
+			name = Release;
+		};
+		18ED874E27D8AAE500A74A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.XenditWordleAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XenditWordleAssessment;
+			};
+			name = Debug;
+		};
+		18ED874F27D8AAE500A74A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.XenditWordleAssessmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XenditWordleAssessment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18ED871827D8AAE200A74A66 /* Build configuration list for PBXProject "XenditWordleAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ED874527D8AAE500A74A66 /* Debug */,
+				18ED874627D8AAE500A74A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18ED874727D8AAE500A74A66 /* Build configuration list for PBXNativeTarget "XenditWordleAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ED874827D8AAE500A74A66 /* Debug */,
+				18ED874927D8AAE500A74A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18ED874A27D8AAE500A74A66 /* Build configuration list for PBXNativeTarget "XenditWordleAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ED874B27D8AAE500A74A66 /* Debug */,
+				18ED874C27D8AAE500A74A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18ED874D27D8AAE500A74A66 /* Build configuration list for PBXNativeTarget "XenditWordleAssessmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ED874E27D8AAE500A74A66 /* Debug */,
+				18ED874F27D8AAE500A74A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18ED871527D8AAE200A74A66 /* Project object */;
+}
