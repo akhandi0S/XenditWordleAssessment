@@ -14,8 +14,6 @@ class WordleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
         setupUI()
         setupObserver()
     }
@@ -40,12 +38,12 @@ extension WordleViewController:UICollectionViewDelegate, UICollectionViewDataSou
             return UICollectionViewCell()
         }
         let guesses = viewModel.currentGuesses
+        cell.letterBGView.backgroundColor = viewModel.cellColor(indexPath: indexPath)
         if let letter = guesses[indexPath.section][indexPath.row] {
             cell.configCell(letter: letter)
         }else{
             cell.updateUI()
         }
-        
         return cell
     }
     
@@ -66,11 +64,14 @@ extension WordleViewController:UICollectionViewDelegate, UICollectionViewDataSou
 extension WordleViewController:UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let letter = string.components(separatedBy: .whitespacesAndNewlines).joined()
-        if letter.count > 0{
-            print(letter)
+        if letter.count == 1{
+            if viewModel.letterPressed(letter: Character(letter.capitalized)){
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            }
             textField.text = ""
         }
         return true
     }
-    
 }
