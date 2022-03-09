@@ -10,21 +10,29 @@ import UIKit
 class WordleViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var letterInputField: UITextField!
+    let viewModel = WordleViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         setupUI()
+        setupObserver()
     }
     
+    //Register cell xib to collectionView & enbleing keyboard
     func setupUI(){
         collectionView.register(UINib(nibName: "WordleLetterCell", bundle: nil), forCellWithReuseIdentifier: "WordleLetterCell")
         letterInputField.becomeFirstResponder()
     }
     
+    //to get the today Word for game from viewModel
+    func setupObserver(){
+        viewModel.getTodayWordle()
+    }
+    
 }
-
+//MARK: - CollectionView Delegate, DataSource, and layout Delegate
 extension WordleViewController:UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -32,7 +40,6 @@ extension WordleViewController:UICollectionViewDelegate, UICollectionViewDataSou
             return UICollectionViewCell()
         }
         cell.updateUI()
-        
         return cell
     }
     

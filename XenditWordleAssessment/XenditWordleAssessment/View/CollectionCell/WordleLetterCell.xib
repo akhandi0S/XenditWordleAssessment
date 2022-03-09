@@ -47,8 +47,8 @@
                 <constraint firstAttribute="bottom" secondItem="RtX-26-q5b" secondAttribute="bottom" id="mor-gG-eRU"/>
             </constraints>
             <connections>
-                <outlet property="backgroundView" destination="RtX-26-q5b" id="xR0-N0-uL7"/>
                 <outlet property="letter" destination="Udr-hd-scz" id="Dn0-Jj-4jK"/>
+                <outlet property="letterBGView" destination="RtX-26-q5b" id="IKD-nS-ueg"/>
                 <outlet property="viewHeight" destination="yEx-Gw-4ka" id="7oo-tX-X96"/>
                 <outlet property="viewWidth" destination="3L6-oo-q6r" id="Qdo-eP-EhK"/>
             </connections>
