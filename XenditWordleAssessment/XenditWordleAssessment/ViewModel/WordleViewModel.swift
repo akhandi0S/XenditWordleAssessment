@@ -26,8 +26,6 @@ class WordleViewModel:NSObject{
         print("Today Wordle:", todayWordle)
     }
     
-    
-    
     func cellColor(indexPath: IndexPath) -> UIColor? {
         let count = wordleGuesses[indexPath.section].compactMap({ $0 }).count
         guard count == 5 else {
@@ -47,8 +45,6 @@ class WordleViewModel:NSObject{
         return .systemOrange
     }
 
-
-    
     func letterPressed(letter: Character)-> Bool {
         var stop = false
 
@@ -65,11 +61,7 @@ class WordleViewModel:NSObject{
                 break
             }
         }
-
         return true
     }
-    
-    
-    
     
 }
