@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		18ED872127D8AAE200A74A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED872027D8AAE200A74A66 /* AppDelegate.swift */; };
 		18ED872327D8AAE200A74A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED872227D8AAE200A74A66 /* SceneDelegate.swift */; };
-		18ED872527D8AAE200A74A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED872427D8AAE200A74A66 /* ViewController.swift */; };
 		18ED872827D8AAE200A74A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ED872627D8AAE200A74A66 /* Main.storyboard */; };
 		18ED872A27D8AAE500A74A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18ED872927D8AAE500A74A66 /* Assets.xcassets */; };
 		18ED872D27D8AAE500A74A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ED872B27D8AAE500A74A66 /* LaunchScreen.storyboard */; };
 		18ED873827D8AAE500A74A66 /* XenditWordleAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED873727D8AAE500A74A66 /* XenditWordleAssessmentTests.swift */; };
 		18ED874227D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED874127D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift */; };
 		18ED874427D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED874327D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift */; };
+		18ED875627D8B01800A74A66 /* WordleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED875527D8B01800A74A66 /* WordleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		18ED871D27D8AAE200A74A66 /* XenditWordleAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XenditWordleAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ED872027D8AAE200A74A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18ED872227D8AAE200A74A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18ED872427D8AAE200A74A66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18ED872727D8AAE200A74A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18ED872927D8AAE500A74A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18ED872C27D8AAE500A74A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		18ED873D27D8AAE500A74A66 /* XenditWordleAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XenditWordleAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ED874127D8AAE500A74A66 /* XenditWordleAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XenditWordleAssessmentUITests.swift; sourceTree = "<group>"; };
 		18ED874327D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XenditWordleAssessmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18ED875527D8B01800A74A66 /* WordleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,9 @@
 		18ED871F27D8AAE200A74A66 /* XenditWordleAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				18ED872027D8AAE200A74A66 /* AppDelegate.swift */,
-				18ED872227D8AAE200A74A66 /* SceneDelegate.swift */,
-				18ED872427D8AAE200A74A66 /* ViewController.swift */,
+				18ED875427D8AF0F00A74A66 /* Base */,
+				18ED875127D8AED900A74A66 /* View */,
+				18ED875027D8AECA00A74A66 /* ViewModel */,
 				18ED872627D8AAE200A74A66 /* Main.storyboard */,
 				18ED872927D8AAE500A74A66 /* Assets.xcassets */,
 				18ED872B27D8AAE500A74A66 /* LaunchScreen.storyboard */,
@@ -125,6 +125,46 @@
 				18ED874327D8AAE500A74A66 /* XenditWordleAssessmentUITestsLaunchTests.swift */,
 			);
 			path = XenditWordleAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		18ED875027D8AECA00A74A66 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18ED875127D8AED900A74A66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18ED875327D8AEF500A74A66 /* VC */,
+				18ED875227D8AEE100A74A66 /* CollectionCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18ED875227D8AEE100A74A66 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		18ED875327D8AEF500A74A66 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				18ED875527D8B01800A74A66 /* WordleViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		18ED875427D8AF0F00A74A66 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				18ED872027D8AAE200A74A66 /* AppDelegate.swift */,
+				18ED872227D8AAE200A74A66 /* SceneDelegate.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18ED872527D8AAE200A74A66 /* ViewController.swift in Sources */,
+				18ED875627D8B01800A74A66 /* WordleViewController.swift in Sources */,
 				18ED872127D8AAE200A74A66 /* AppDelegate.swift in Sources */,
 				18ED872327D8AAE200A74A66 /* SceneDelegate.swift in Sources */,
 			);
