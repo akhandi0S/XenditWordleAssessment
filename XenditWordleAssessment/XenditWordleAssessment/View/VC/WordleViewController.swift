@@ -63,14 +63,21 @@ extension WordleViewController:UICollectionViewDelegate, UICollectionViewDataSou
 //MARK: - TextField Delegate- to type the letter for guesses the wordle
 extension WordleViewController:UITextFieldDelegate{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let letter = string.components(separatedBy: .whitespacesAndNewlines).joined()
-        if letter.count == 1{
-            if viewModel.letterPressed(letter: Character(letter.capitalized)){
+        if string.count == 0{
+            if viewModel.removeLetter(){
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
             }
-            textField.text = ""
+        }else{
+            let letter = string.components(separatedBy: .whitespacesAndNewlines).joined()
+            if letter.count == 1{
+                if viewModel.letterPressed(letter: Character(letter.capitalized)){
+                    DispatchQueue.main.async {
+                        self.collectionView.reloadData()
+                    }
+                }
+            }
         }
         return true
     }
