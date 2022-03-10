@@ -10,12 +10,13 @@ import UIKit
 class WordleViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var letterInputField: UITextField!
-    let viewModel = WordleViewModel()
+    lazy var viewModel:IWordleViewModel = {
+       return WordleViewModel()
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        setupObserver()
     }
     
     // Register cell xib to collectionView & enbleing keyboard
@@ -24,14 +25,9 @@ class WordleViewController: UIViewController {
         letterInputField.becomeFirstResponder()
     }
     
-    // to get the today's Word for game from viewModel
-    func setupObserver(){
-        viewModel.getTodayWordle()
-    }
-    
 }
-//MARK: - CollectionView Delegate, DataSource, and layout Delegate
-extension WordleViewController:UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+//MARK: - CollectionView DataSource, and layout Delegate
+extension WordleViewController:UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WordleLetterCell", for: indexPath) as? WordleLetterCell else {

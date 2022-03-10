@@ -8,24 +8,32 @@
 import Foundation
 import UIKit
 
-class WordleViewModel:NSObject{
-    let worldeList = ["Hello", "Today", "Ocean", "Gamer"]
-    
-    var todayWordle = ""
+protocol IWordleViewModel{
+    var  currentGuesses: [[Character?]] {get}
+    func cellColor(indexPath: IndexPath) -> UIColor?
+    func letterPressed(letter: Character)-> Bool
+    func removeLetter() -> Bool
+}
+
+class WordleViewModel: IWordleViewModel {
+    private let worldeList = ["Hello", "Today", "Ocean", "Gamer"]
+    private var todayWordle = ""
+
     private var wordleGuesses: [[Character?]] = Array(
         repeating: Array(repeating: nil, count: 5),
         count: 6
     )
-    
+    // setting No. of cells
     var currentGuesses: [[Character?]] {
-        return wordleGuesses
+        wordleGuesses
     }
-    
-    func getTodayWordle(){
+    // Initializing and setting word
+    init(){
         todayWordle = worldeList.randomElement() ?? "India"
-        print("Today Wordle:", todayWordle)
+        // printing for testing 
+        print("Today's Wordle:", todayWordle)
     }
-    
+    // Get colors according for indexpath
     func cellColor(indexPath: IndexPath) -> UIColor? {
         let count = wordleGuesses[indexPath.section].compactMap({ $0 }).count
         guard count == 5 else {
@@ -44,43 +52,32 @@ class WordleViewModel:NSObject{
         }
         return .systemOrange
     }
-    
+    // Adding letter in cells rows and section
     func letterPressed(letter: Character)-> Bool {
-        var stop = false
         
         for i in 0..<wordleGuesses.count {
             for j in 0..<wordleGuesses[i].count {
                 if wordleGuesses[i][j] == nil {
                     wordleGuesses[i][j] = letter
-                    stop = true
-                    break
+                    return true
                 }
             }
-            
-            if stop {
-                break
-            }
         }
-        return true
+        return false
     }
-    
+    // Removing letter for retry
     func removeLetter() -> Bool{
-        var stop = false
         
         for i in (0..<wordleGuesses.count).reversed() {
             for j in (0..<wordleGuesses[i].count).reversed() {
                 if wordleGuesses[i][j] != nil {
                     wordleGuesses[i][j] = nil
-                    stop = true
-                    break
+                    return true
                 }
             }
             
-            if stop {
-                break
-            }
         }
-        return true
+        return false
     }
     
 }
